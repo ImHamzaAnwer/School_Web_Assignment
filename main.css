@@ -1,4 +1,4 @@
-.nav-list ul{
+.nav ul{
     margin: 0;
     padding: 0;
 }
@@ -185,14 +185,51 @@
 /*---=Gallery Ends-----*/
 
 /**/
-.message{
+.message h2{
+    padding: 20px 0;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 2px solid indianred; 
+}
+
+form{
+    max-width: 650px;
+    margin: 0 auto;
+    width: 100%;
+}
+.contact{
     background-color: #333;
     color: #fff;
+    padding-bottom: 20px;
 }
 
 textarea{
     width: 100%;
 }
 
+.btn{
+    padding: 10px 30px !important;
+    border: none !important;
+}
 
+.contact-details{
+    padding: 30px 0;
+}
+
+.detail-box img{
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
+
+.detail-box img:hover{
+    border-bottom: 4px solid #333;
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+
+.map{
+    background-color: indianred;
+    padding: 30px 0;
+}
 /**/
