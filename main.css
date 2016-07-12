@@ -1,16 +1,78 @@
-.nav ul{
-    margin: 0;
-    padding: 0;
+.header{
+    background-color: indianred;
 }
 
-.nav-list ul li{
+.clear{
+    clear: both;
+}
+
+.logo-sec{
+    width: 30%;
+    float: left;
+    color: #fff;
+}
+.logo-sec p{
+    padding-left: 20px;
+    line-height: 50px;
+    font-size: 1.5em;
+}
+
+.nav-sec{
+    width: 70%;
+    float: right;
+}
+
+.nav-sec ul{
+    margin-left: 32%;    
+}
+
+.nav ul li{
     display: inline;
 }
 
-.nav-list ul li a{
-    padding: 20px 10px;
+.nav li a{
+    color: #fff;
+    line-height: 50px;
+    padding: 27px 20px;
+   -webkit-transition: all 1s ease 0s;
+   -moz-transition: all 1s ease 0s;
+   transition: all 1s ease 0s;
 }
 
+.nav li a:hover{
+    background-color: rgba(5, 5, 5, 0.3);
+    text-decoration: none;
+}
+
+@media screen and (max-width:786px){
+    .logo-sec, .nav-sec{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav{
+        display: block;
+    }
+    
+    .nav-sec ul{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .nav ul{
+        padding: 0;
+    }
+    
+    .nav ul li{
+        display: block;
+    }
+    
+    .nav ul li a{
+        padding: 10px 20px;
+    }
+}
 /*Nav Ends*/
 
 .slider{
@@ -153,6 +215,20 @@
 .gallery{
     padding: 30px 0;
 }
+.gallery-box img, .gallery-box-2 img{
+        opacity: 0.7;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+}
+
+.gallery-box img:hover, .gallery-box-2 img:hover{
+    transform : skew(5deg);
+    transform-origin: center;
+    border-radius: 10px;
+    opacity: 1;
+}
 
 .gallery-box{
     box-sizing: border-box;
@@ -162,6 +238,7 @@
 }
 
 .categories{
+    margin-top: 30px;
     padding-bottom: 30px;
     background-color: #333;
 }
